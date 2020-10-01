@@ -1,6 +1,11 @@
 function takeANumber (katzDeliLine,name){
- katzDeliLine.push(name)
-return `Welcome, ${name}. You are number ${katzDeliLine.indexOf(`${name}`)+1} in line.`;
+ katzDeliLine.push(name);
+return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+}
+let i = 1;
+function takeNumber2(){
+  `Welcome you are number ${i}`;
+   i++;
 }
 
 function nowServing(katzDeliLine){
@@ -10,7 +15,7 @@ if(katzDeliLine.length === 0){
 return "There is nobody waiting to be served!"
 }
 else{
-  return `Currently serving ${firstPerson}.`;
+   return `Currently serving ${firstPerson}.`;
 }
 
 }
